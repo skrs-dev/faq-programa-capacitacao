@@ -1,13 +1,13 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ - Perguntas Frequentes</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+
+{{ 'style.css' | asset_url |  stylesheet_tag  }}
+
+    
     <main class="faq">
+
+    
+
+{{ section.settings.text_id }}
+
         <div class="faq__container">
             <header class="faq__header">
                 <h1 class="faq__title">FAQ</h1>
@@ -92,7 +92,21 @@
             </section>
         </div>
     </main>
-</body>
-</html>
 
-<script src="script.js"></script>
+{% schema %}
+{
+  "name": "Faq",
+  "settings": [
+    {
+        "type": "text",
+        "id": "text_id",
+        "label": "Insira o texto aqui"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Faq"
+    }
+  ]
+}
+{% endschema %}
