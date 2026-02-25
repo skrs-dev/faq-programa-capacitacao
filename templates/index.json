@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 {
   "sections": {
@@ -6,4 +7,14 @@
     },
   },
   "order": ["Faq"]
+=======
+
+{
+  "sections": {
+    "Faq": {
+      "type": "faq"
+    },
+  },
+  "order": ["Faq"]
+>>>>>>> e353a4eef980002142c1c326d87e19603413c524
 }
